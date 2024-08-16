@@ -1,0 +1,116 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+}
+
+.container-custom {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header span {
+    font-weight: 600;
+}
+
+.btn-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f9fafb;
+    background-color: #38a169;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #2f855a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card-custom {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header h3 {
+    font-size: 20px;
+    color: #38a169;
+    margin: 0;
+}
+
+.card-content {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: grid;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.option input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #38a169;
+    outline: none;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.option input[type="radio"]:checked {
+    background-color: #38a169;
+    border: 6px solid white;
+    box-shadow: 0 0 0 2px #38a169;
+}
+
+.option label {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Answers</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mcq_page.css') }}">
+</head>
+<body>
+    <div class="container-custom">
+        <div class="header">
+            <div>
+                <span>Total Marks: 100</span>
+                <span style="margin-left: 15px;">Time: 7 min left</span>
+            </div>
+            <button class="btn-custom">SUBMIT QUIZ</button>
+        </div>
+        <h1>Choose Correct Answers</h1>
+        <div class="card-custom">
+            <div class="card-header">
+                <h3>Question No. 1</h3>
+            </div>
+            <div class="card-content">
+                <p>1. For an encoder-decoder network, is it necessary to predefine the sequence length or not?</p>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1a1" value="no">
+                        <label for="q1a1">No, it isn't.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1a2" value="depends">
+                        <label for="q1a2">It depends on the type of data.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1a3" value="yes">
+                        <label for="q1a3">Yes, it is necessary.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" id="q1a4" value="none">
+                        <label for="q1a4">None of the above.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-custom">
+            <div class="card-header">
+                <h3>Question No. 2</h3>
+            </div>
+            <div class="card-content">
+                <p>2. What is the primary purpose of an attention mechanism in a transformer model?</p>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2a1" value="focus">
+                        <label for="q2a1">To focus on different parts of the input sequence.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2a2" value="memory">
+                        <label for="q2a2">To store previous hidden states in memory.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2a3" value="speed">
+                        <label for="q2a3">To increase the speed of training.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" id="q2a4" value="none">
+                        <label for="q2a4">None of the above.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.bg-nav{
+    background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.ico{
+
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+.m-150{
+    margin-top: 200px;
+}
+
+.login-container {
+    height: auto;
+    max-width: 400px;
+    margin: 50px auto;
+    margin-top: 110px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  .logb{
+    margin-top: 15px;
+  }
+
+
+  .register-container {
+    height: auto;
+    max-width: 400px;
+    margin: 50px auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  
+  

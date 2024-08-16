@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="text-light m-150 animated-text" style="font-weight:600;"> Advanced Monitoring, Absolute Integrity: Protecting Every Exam, Preserving Every Future. </h2>
+    </div>
+    <div class="col-md-6">
+      <div class="login-container">
+        {% with messages = get_flashed_messages(category_filter=["login_error","db_error"]) %} 
+        <!-- dui otai error message eutai element ma dekhuna lai -->
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-danger" role="alert">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <h2 class="text-center">Login</h2>
+        <form method="post" action="{{ url_for('login_validation') }}">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <!-- {{ request.args.get('email', '') }}-->
+            <input type="email" class="form-control" id="email" name="email" value="{{email}}" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="pass" value="{{password}}" required>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary logb">Login</button>
+            <p style="text-align: center; margin-top: 20px;">
+              Don't have an account? <a href="{{ url_for('register') }}" style="text-decoration: none; color: #007bff;">Sign up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> <!-- Closing div for row -->
+</div> <!-- Closing div for container -->
+
+{% endblock content %}
